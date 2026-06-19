@@ -85,31 +85,6 @@ Datasets are not included in this repository due to size and license restriction
 
 ---
 
-## Repository structure
-
-```
-Camouflaged_Object_Detection/
-├── notebooks/
-│   └── ir_cod_pipeline.ipynb      # End-to-end Kaggle/Colab notebook (all stages)
-├── src/
-│   ├── delta_t.py                 # ΔT decomposition + visualization
-│   ├── dataset_parsers.py         # LLVIP / FLIR / KAIST loaders
-│   ├── sam2_annotate.py           # Box-to-mask pipeline via SAM2
-│   ├── model.py                   # 2-channel YOLOv8 + TEA module + composite loss
-│   ├── dataset.py                 # Dataloader, augmentation, weighted sampling
-│   ├── train.py                   # 3-stage curriculum training loop
-│   ├── evaluate.py                # S-measure, wFm, MAE, E-measure
-│   ├── sensitivity_curve.py       # ΔT-binned performance analysis
-│   └── ablation.py                # Component-wise ablation study
-├── figures/                       # Generated IEEE-style figures (per-figure exports)
-├── configs/
-│   └── config.yaml                # Hyperparameters, paths, dataset weights
-├── docs/
-│   └── DATASETS.md                # Dataset download + directory setup instructions
-├── LICENSE
-└── README.md
-```
-
 ---
 
 ## Getting started
@@ -119,27 +94,6 @@ Camouflaged_Object_Detection/
 - Python 3.10+
 - CUDA-capable GPU (developed and tested on Kaggle T4 ×2)
 - `ultralytics`, `albumentations`, `segment-anything-2`, `torch`, `opencv-python`
-
-```bash
-pip install ultralytics albumentations opencv-python torch torchvision
-pip install git+https://github.com/facebookresearch/segment-anything-2.git
-```
-
-### Running the pipeline
-
-The full pipeline is designed to run end-to-end on Kaggle (GPU T4 ×2, internet on) or any CUDA machine with equivalent memory:
-
-```bash
-python src/sam2_annotate.py     # generate pixel masks + contrast scores
-python src/train.py             # 3-stage curriculum training
-python src/evaluate.py          # compute COD metrics
-python src/sensitivity_curve.py # ΔT sensitivity analysis
-python src/ablation.py          # ablation study
-```
-
-Configuration (paths, hyperparameters, dataset weights) lives in `configs/config.yaml` — update dataset paths there before running.
-
----
 
 ## Results
 
@@ -161,10 +115,9 @@ See [`figures/`](figures/) for the full ΔT sensitivity curve, training curves, 
 If you use this work, please cite:
 
 ```bibtex
-@article{yourname2026ircod,
+@article{hima2026ircod,
   title   = {Thermal Edge Attention for Camouflaged Object Detection in Infrared Imagery},
-  author  = {Your Name},
-  journal = {TBD},
+  author  = {Hima Chhatbar},
   year    = {2026}
 }
 ```
