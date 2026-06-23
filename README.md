@@ -94,7 +94,7 @@ Epochs: 50  |  LR: 5e-5  |  Scheduler: CosineAnnealingWarmRestarts
 pip install timm segmentation-models-pytorch albumentations opencv-python-headless
 ```
 
-Tested on NVIDIA P100 16GB · PyTorch AMP · Batch size 4
+Tested on GPU P100 16GB · PyTorch AMP · Batch size 4
 
 ---
 
