@@ -1,0 +1,14 @@
+Copy your 6 Stage-4 checkpoint files into this folder and rename them exactly as below
+(the backend looks them up by these filenames):
+
+  your_upload_filename                              ->  rename to
+  --------------------------------------------------------------------------
+  1786036583972_stage4_scratch_seed42.pth           ->  stage4_scratch_seed42.pth
+  1786036583973_stage4_scratch_seed123.pth          ->  stage4_scratch_seed123.pth
+  1786036583974_stage4_scratch_seed2024.pth         ->  stage4_scratch_seed2024.pth
+  1786036583970_stage4_init_seed42.pth              ->  stage4_init_seed42.pth
+  1786036583971_stage4_init_seed123.pth             ->  stage4_init_seed123.pth
+  1786036583972_stage4_init_seed2024.pth            ->  stage4_init_seed2024.pth
+
+(Stage 1/2/3 checkpoints are not needed for the live demo -- Stage 4 is the
+deployment-ready RGB-only model. Keep them wherever you like for reference.)

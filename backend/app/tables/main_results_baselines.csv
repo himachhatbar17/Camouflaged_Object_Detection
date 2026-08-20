@@ -1,0 +1,9 @@
+Method,Publication,Dataset,MAE,Sm,wFm,Em,Source
+SINet-V2,"Fan et al., TPAMI 2022",COD10K-test,0.037,0.815,0.682,0.887,He et al. CVPR2023 Tab.1
+SINet-V2,"Fan et al., TPAMI 2022",NC4K,0.048,0.847,0.792,0.903,He et al. CVPR2023 Tab.1
+ZoomNet,"Pang et al., CVPR 2022",COD10K-test,0.029,0.838,0.74,0.888,He et al. CVPR2023 Tab.1
+ZoomNet,"Pang et al., CVPR 2022",NC4K,0.043,0.853,0.814,0.896,He et al. CVPR2023 Tab.1
+FEDER,"He et al., CVPR 2023",COD10K-test,0.032,0.823,0.74,0.9,He et al. CVPR2023 Tab.1 (FEDER-R50)
+FEDER,"He et al., CVPR 2023",NC4K,0.045,0.846,0.817,0.905,He et al. CVPR2023 Tab.1 (FEDER-R50)
+ERRNet,"Ji et al., PR 2022",COD10K-test,0.044,0.78,0.629,0.867,Ji et al. PR2022 Tab.1
+ERRNet,"Ji et al., PR 2022",NC4K,,,,,N/A -- not benchmarked on NC4K in original paper
