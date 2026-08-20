@@ -318,7 +318,8 @@ project-root/
 ```
 
 ### Running the demo locally
-
+- add the tables folder to backend/app
+- add all the checkpoints till stage 4 to checkpoints folder
 ```bash
 # 1. Backend
 cd backend
