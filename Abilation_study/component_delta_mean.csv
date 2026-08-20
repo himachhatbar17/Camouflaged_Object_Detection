@@ -1,0 +1,6 @@
+ID,Method,Δ MAE↓,Δ S-measure↑,Δ wF-measure↑,Δ E-measure↑
+A3-Full,Full,-0.0,0.0,0.0,0.0
+A3-NoDT,No ΔT,-0.0001,0.0001,0.0002,0.0002
+A3-NoGate,No Gate,-0.0001,-0.0003,-0.0003,-0.0
+A3-NoAttn,No Attn,0.0003,0.0027,0.0026,0.0027
+A3-NoPseudoDT,No Pseudo-ΔT,-0.0003,-0.0009,-0.0012,-0.0
