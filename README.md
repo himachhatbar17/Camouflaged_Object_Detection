@@ -257,8 +257,8 @@ Stage 4 ────────────────────────
 ### Prerequisites
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/deltaT-guided-cod.git
-cd deltaT-guided-cod
+git clone https://github.com/himachhatbar17/Camouflaged_Object_Detection
+cd Camouflaged_Object_Detection
 
 pip install -r requirements.txt
 ```
@@ -286,14 +286,14 @@ tqdm>=4.65.0
 
 The full training implementation is provided as a self-contained Kaggle notebook:
 
-1. Upload `deltaT_guided_cod_notebook.ipynb` to Kaggle
+1. Upload `jupyter-notebook-implemenattion.ipynb` to Kaggle
 2. Attach the following datasets to your notebook:
    - `monishshrivastava1/llvip-dataset`
    - `samdazel/teledyne-flir-adas-thermal-dataset-v2`
    - `stoilacindy/vt5000-new`
    - `ivanomelchenkoim11/cod10k-dataset`
    - `ivanomelchenkoim11/nc4k-dataset`
-3. Enable GPU accelerator (**T4 × 2** recommended)
+3. Enable GPU accelerator (**VRAM >=16GB** recommended)
 4. Run All Cells
 
 <br/>
@@ -323,6 +323,7 @@ project-root/
 ```bash
 # 1. Backend
 cd backend
+add the .pth files where mentioned
 pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
 
@@ -482,7 +483,7 @@ If you find this work useful for your research, please cite:
                for Camouflaged Object Detection},
   author    = {HimaChhatbar},
   journal   = {IEEE Transactions on Image Processing},
-  year      = {2024},
+  year      = {2026},
 }
 ```
 
